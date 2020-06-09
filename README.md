@@ -1,27 +1,16 @@
-# LikeComponentNg
+# LikeNg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
+## Exercise 4
 
-## Development server
+### Like Reusable Component Displaying Data & Handling Events
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Exercise to create a reusable component that allows the selection of a like icon and displays the count of likes.
 
-## Code scaffolding
+### Action Plan:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    ✔ Create Project using NG CLI
+    ✔ Connect and push to GitHub
+    - Create Component using NG CLI
+    - Add a subject object to the AppComponent class
+    - Add the component to the App Component Template. Add code to this template to use property binding to update the likesCount and isLiked properties
+    - Add add the methods to the like component to handle the click events and update the fields
