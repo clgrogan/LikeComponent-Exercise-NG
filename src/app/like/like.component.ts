@@ -6,15 +6,20 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
   styleUrls: ["./like.component.css"],
 })
 export class LikeComponent {
+  title = "Like Component Angular Exercise";
+
   @Input() isLiked: boolean;
   @Input() postText: string;
   @Input() likesCount: number;
-  // @Output("change") changeLike = new EventEmitter();
+  @Input() postObject: any;
+  @Output("change") change = new EventEmitter();
 
-  writeVariables = () => {
-    console.log();
-    console.log("isLiked", this.isLiked);
+  toggleIsLiked = () => {
+    this.isLiked = !this.isLiked;
+    this.change.emit(this.isLiked);
   };
+}
 
-  toggleIsLiked = () => (this.isLiked = !this.isLiked);
+export interface IsLikeChangedEventArgs {
+  newValue: boolean;
 }

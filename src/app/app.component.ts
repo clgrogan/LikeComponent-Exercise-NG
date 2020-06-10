@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { IsLikeChangedEventArgs } from "./like/like.component";
 
 @Component({
   selector: "app-root",
@@ -6,12 +7,14 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  title = "Like Reusable Component NG";
   post = {
     postText:
       "This is the text or body of a post, Tweet, comment, " +
-      "or some other content that a user could be given the option of liking.",
+      "or some other content that a user may be given the option of liking.",
     isLiked: false,
     likesCount: 0,
   };
+  onLikeChanged(isLiked: IsLikeChangedEventArgs) {
+    isLiked ? this.post.likesCount++ : this.post.likesCount--;
+  }
 }

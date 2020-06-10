@@ -1,1 +1,8 @@
-<like [likesCount]="post.likesCount" [isLiked]="post.isLiked"> </like>
+<like
+  [postObject]="post"
+  [likesCount]="post.likesCount"
+  [isLiked]="post.isLiked"
+  [postText]="post.postText"
+  (change)="onLikeChanged($event)"
+>
+</like>
