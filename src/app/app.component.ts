@@ -7,8 +7,10 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "Like Reusable Component NG";
-  tweet = {
-    body: "This is the text or body of a Tweet!",
+  post = {
+    postText:
+      "This is the text or body of a post, Tweet, comment, " +
+      "or some other content that a user could be given the option of liking.",
     isLiked: false,
     likesCount: 0,
   };

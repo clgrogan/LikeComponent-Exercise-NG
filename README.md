@@ -14,6 +14,6 @@ Exercise to create a reusable component that allows the selection of a like icon
     ✔ Connect and push to GitHub
     ✔ Deploy to Netlify via continuous deploy from GitHub repository.
     ✔ Create Component using NG CLI
-    - Add a subject (tweet,post, etc.) object to the AppComponent class
+    ✔ Add a subject (tweet,post, etc.) object to the AppComponent class
     - Add the component to the App Component Template. Add code to this template to use property binding to update the likesCount and isLiked properties
-    - Add add the methods to the like component to handle the click events and update the fields
+    - Add the methods to the like component to handle the click events and update the fields

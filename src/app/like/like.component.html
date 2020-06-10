@@ -1,1 +1,15 @@
-<p>like works!</p>
+<main>
+  <section>
+    {{ writeVariables() }}
+    <h1>
+      <span
+        (click)="toggleIsLiked()"
+        class="{{ isLiked ? 'liked' : 'not-liked' }}"
+      >
+        &#10084;
+      </span>
+      Count {{ isLiked }}
+    </h1>
+  </section>
+  <section></section>
+</main>
