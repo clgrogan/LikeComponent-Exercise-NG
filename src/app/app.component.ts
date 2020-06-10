@@ -12,7 +12,7 @@ export class AppComponent {
       "This is the text or body of a post, Tweet, comment, " +
       "or some other content that a user may be given the option of liking.",
     isLiked: false,
-    likesCount: 0,
+    likesCount: 21,
   };
   onLikeChanged(isLiked: IsLikeChangedEventArgs) {
     isLiked ? this.post.likesCount++ : this.post.likesCount--;

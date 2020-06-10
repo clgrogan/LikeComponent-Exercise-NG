@@ -8,10 +8,10 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 export class LikeComponent {
   title = "Like Component Angular Exercise";
 
-  @Input() isLiked: boolean;
-  @Input() postText: string;
-  @Input() likesCount: number;
-  @Input() postObject: any;
+  @Input("isLiked") isLiked: boolean;
+  @Input("postText") postText: string;
+  @Input("likesCount") likesCount: number;
+  @Input("postObject") postObject: any;
   @Output("change") change = new EventEmitter();
 
   toggleIsLiked = () => {
